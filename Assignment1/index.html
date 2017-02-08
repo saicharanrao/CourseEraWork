@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <title>Practise 1</title>
+  </head>
+  <body ng-app="Assignment1">
+    <h1>Practise 1</h1>
+    <h5>
+      If you enter less than or 3 items then "Enjoy!" else "Too Much!"
+      <br>
+      Ex: Pizza, Ice cream, Tea  = Enjoy!
+      <br>
+      Ex: Pizza, Ice cream, Tea, Curd = Too Much!
+    </h5>
+    <div ng-controller = "assignController">
+    <div>
+      Enter your items here:
+    <input type="text"
+            ng-model="items">
+    <div>
+      <button ng-click="checkMethod()">Check If Too Much</button>
+      <br>
+      {{sayMessage}}
+    </div>
+  </div>
+</div>
+</body>
+</html>
